@@ -14,8 +14,8 @@ namespace backend.Controllers
         public CommentController()
         {
             // Initialize the TableClient with your storage account connection string and table name
-            var connectionString = "DefaultEndpointsProtocol=https;AccountName=reactdotnetajinkya;AccountKey=0mTqCj6N+tpLWc3E18aXrClYev1X77VPZd4PdmyJZlVtpeb45zvsSC+9begT8+dwoH+wwFI/p+im+ASteuXWSA==;EndpointSuffix=core.windows.net";
-            var tableName = "UserDetails";
+            var connectionString = "your-connecion-string-here";
+            var tableName = "your-table-name-here";
             var tableServiceClient = new TableServiceClient(connectionString);
             _tableClient = tableServiceClient.GetTableClient(tableName);
         }
